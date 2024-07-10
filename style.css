@@ -1,0 +1,140 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a {
+     color: hsl(228, 45%, 44%); 
+}
+html{
+    font-size: 15px;
+}
+body{
+    background-color: hsl(0, 0%, 98%);
+    font-family: "Poppins", sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.first-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    margin-top: 3rem;
+    margin-bottom: 3.5rem;
+}
+.first-container h1{
+    color: hsl(234, 12%, 34%);
+    font-weight: 200;
+    text-align: center;
+}
+.first-container .bold{
+    font-weight: 600;
+    margin-bottom: 1.2rem;
+    text-align: center;
+}
+.first-container p{
+    color: hsl(229, 6%, 66%);
+    text-align: center;
+}
+.second_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 3rem ;
+    width: 80%;
+    
+}
+.col-0, .col-2{
+    align-self: center;
+}
+.element-0{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-top: 0.3rem solid hsl(180, 62%, 55%);
+    background-color: white;
+}
+.second_container h3{
+    color: hsl(234, 12%, 34%);
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.66rem;
+}
+.second_container p{
+    color: hsl(229, 6%, 66%);
+    font-size: 0.85rem;
+    margin-bottom: 3rem;
+}
+.supervisor-monitor{
+    display: flex;
+    justify-content: flex-end;
+}
+.element-1{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-top: 0.3rem solid hsl(0, 78%, 62%);
+    background-color: white;
+    margin-bottom: 2rem;
+}
+.builder-monitor{
+    display: flex;
+    justify-content: flex-end;
+}
+.element-2{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-top: 0.3rem solid hsl(34, 97%, 64%);
+    background-color: white;
+}
+.karma-monitor{
+    display: flex;
+    justify-content: flex-end;
+}
+.element-3{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-top: 0.3rem solid hsl(212, 86%, 64%);
+    background-color: white;
+}
+.calculator-monitor{
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media screen and (max-width: 570px) {
+    .first-container{
+        width: 80%;
+    }
+    .first-container h1{
+        font-size: 1.6rem;
+    }
+    .second_container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr 1fr;
+        gap: 1rem;
+    }
+    .element-1{
+        margin-bottom: 1.5rem;
+    }
+    
+    
+}
